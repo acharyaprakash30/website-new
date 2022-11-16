@@ -4,11 +4,18 @@ import FootPart from './components/FootPart/FootPart'
 import RightPart from './components/RightPart/RightPart'
 import LeftPart from './components/LeftPart/LeftPart'
 import './App.css'
+import "./App.css";
+import Login from "./Login";
 
 const App = () => {
   return (
     <>
-      <div className="white-container">
+  
+      <div className="App">
+      <Login />
+
+    </div>
+    <div className="white-container">
         <div className="blue-container">
           <div className="second-white-container">
             <HeadPart />
@@ -20,9 +27,9 @@ const App = () => {
           </div>
         </div>
       </div>
-
     </>
   )
+ 
 }
 
 export default App
