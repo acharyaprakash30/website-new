@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
-import Doctor from "./Images/doctor.png";
-import Patient from "./Images/patient.png";
+import Doctor from "./images/doctor.png";
+import Patient from "./images/patient.png";
 import { GoMail } from "react-icons/go";
 import { TfiLock } from "react-icons/tfi";
 import { TiTick } from "react-icons/ti";

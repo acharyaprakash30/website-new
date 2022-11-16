@@ -1,3 +1,31 @@
+
+.white-container{
+   margin: 50px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.blue-container{
+    padding: 10px 0 10px 0;
+    /* height: 63rem; */
+    background: linear-gradient(to bottom left, #ADD8E6 0%, blue 100%);
+
+    
+    border-radius: 1rem;
+}
+.second-white-container{
+    border: 2px solid blue;
+    margin: 3.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    
+}
+
+.body-container{
+    display: flex;
+    justify-content: space-around;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
