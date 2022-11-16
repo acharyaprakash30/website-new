@@ -41,7 +41,7 @@ const Login = () => {
             />
             <img className="h-20 mb-3" src={Doctor} alt="doctor" />
             <p className="text-sky-500 text-center font-semibold text-sm">
-              Doctor
+              Doctors
             </p>
           </div>
           <div
