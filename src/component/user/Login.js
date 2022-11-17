@@ -37,7 +37,7 @@ const Login = () => {
             <TiTick
 
               className={
-                defaultTick =='user'
+                defaultTick ==='user'
                   ? "absolute bottom-0 right-0 -right-2.5 -bottom-2.5 text-2xl bg-sky-500 text-white rounded-full"
                   : "hidden"
               }
@@ -62,7 +62,7 @@ const Login = () => {
           >
             <TiTick
               className={
-                defaultTick =='vendor'
+                defaultTick ==='vendor'
                   ? "absolute bottom-0 right-0 -right-2.5 -bottom-2.5 text-2xl bg-sky-500 text-white rounded-full"
                   : "hidden"
               }
