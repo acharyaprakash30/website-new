@@ -1,32 +1,26 @@
 import React from 'react'
-import HeadPart from './components/HeadPart/HeadPart'
-import FootPart from './components/FootPart/FootPart'
-import RightPart from './components/RightPart/RightPart'
-import LeftPart from './components/LeftPart/LeftPart'
 import './App.css'
-import "./App.css";
-import Login from "./Login";
+import Login from "./component/user/Login";
+import Register from './component/user/Register';
+import Dashboard from './component/Admin/Dashboard';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+
 
 const App = () => {
   return (
     <>
-  
-      <div className="App">
-      <Login />
-
-    </div>
-    <div className="white-container">
-        <div className="blue-container">
-          <div className="second-white-container">
-            <HeadPart />
-            <div className="body-container">
-            <LeftPart />
-            <RightPart />
-            </div>
-            <FootPart />
+     <Router>
+           <div className="App">
+           <Routes>
+                 <Route exact path='/login' element={< Login />}></Route>
+                 <Route exact path='/' element={< Dashboard />}></Route>
+                 <Route exact path='/register' element={< Register />}></Route>
+                 
+                 
+          </Routes>
           </div>
-        </div>
-      </div>
+       </Router>
+  
     </>
   )
  

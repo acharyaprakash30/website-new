@@ -1,0 +1,112 @@
+
+.white-container{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ 
+ .blue-container{
+     padding: 10px 0 10px 0;
+     /* height: 63rem; */
+     background: linear-gradient(to bottom left, #ADD8E6 0%, blue 100%);
+ 
+     
+     border-radius: 1rem;
+ }
+ .second-white-container{
+     border: 2px solid blue;
+     margin: 3.5rem;
+     background-color: white;
+     border-radius: 1rem;
+     
+ }
+ 
+ .body-container{
+     display: flex;
+     justify-content: space-around;
+ }
+ .sign-up-text{
+    font-size: 2rem;
+}
+.supporting-text{
+    font-size: 1rem;
+}
+.right-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fname{
+    font-size: 1.4rem;
+}
+.firstname-input{
+    font-size: 2rem;
+    border: none;
+    color: black;
+}
+.lname{
+    font-size: 1.4rem;
+}
+.lastname-input{
+    font-size: 2rem;
+    border: none;
+    color: black;
+}
+.getstarted-div{
+font-size: 15px;
+padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+border-radius: 40px;
+background-color: blue;
+}
+.head-part-main-container{
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 35rem;
+    
+}
+.logo-sym{
+    position: absolute;
+}
+.joule{
+    position: absolute;
+    left: 40px;
+}
+.logo-n-text{
+    /* padding: 5px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-direction: row;
+    font-style: oblique;
+    font-size: 2rem; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 2rem;
+    margin: 1rem;
+
+}
+
+.btn-already-have-account{
+   margin-right: 4rem; 
+   margin-top: 1rem;
+    
+}
+.btn-already-have-account>button{
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 2rem;
+ 
+    border-radius: 8px;
+}
+.foot-content{
+    text-align: center;
+    
+    border: 1px solid yellow;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
-import Doctor from "./images/doctor.png";
-import Patient from "./images/patient.png";
+import Doctor from "../../images/doctor.png";
+import Patient from "../../images/patient.png";
 import { GoMail } from "react-icons/go";
 import { TfiLock } from "react-icons/tfi";
 import { TiTick } from "react-icons/ti";
@@ -12,10 +12,11 @@ const Login = () => {
   const [holdermail, setholdermail] = useState("Email");
   const [holderpassword, setholderpassword] = useState("Password");
   const [feildname, setfeildname] = useState(false);
+  const [defaultTick,setDefaultTick] = useState('user');
 
   return (
     <div className="bg-sky-100 flex justify-center align-center h-screen">
-      <div className="bg-white align-center justify-center border-solid border-2 px-9 py-10 w-fit my-10">
+      <div className="bg-white align-center justify-center border-solid border-2 p-20 py-10 w-fit my-20">
         <p className="text-sky-500 text-xl text-center font-bold mb-10">
           Choose Account Type
         </p>
@@ -30,14 +31,17 @@ const Login = () => {
             onClick={() => {
               setcharacter(true);
               setcharacterr(false);
+              setDefaultTick('user')
             }}
           >
             <TiTick
+
               className={
-                character
+                defaultTick =='user'
                   ? "absolute bottom-0 right-0 -right-2.5 -bottom-2.5 text-2xl bg-sky-500 text-white rounded-full"
                   : "hidden"
               }
+              onClick={()=>setDefaultTick('user')}
             />
             <img className="h-20 mb-3" src={Doctor} alt="doctor" />
             <p className="text-sky-500 text-center font-semibold text-sm">
@@ -53,14 +57,16 @@ const Login = () => {
             onClick={() => {
               setcharacterr(true);
               setcharacter(false);
+              setDefaultTick('vendor')
             }}
           >
             <TiTick
               className={
-                characterr
+                defaultTick =='vendor'
                   ? "absolute bottom-0 right-0 -right-2.5 -bottom-2.5 text-2xl bg-sky-500 text-white rounded-full"
                   : "hidden"
               }
+            
             />
 
             <img className="h-20 mb-3" src={Patient} alt="patient" />
